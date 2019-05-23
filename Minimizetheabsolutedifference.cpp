@@ -11,7 +11,7 @@ i.e. minimize | max(a,b,c) - min(a,b,c) |.*/
 
 int Solution::solve(vector<int> &A, vector<int> &B, vector<int> &C) {
     int diff,fi=A.size()-1,si=B.size()-1,ti=C.size()-1,ans=INT_MAX;
-    while(fi>=0,si>=0,ti>=0)
+    while(fi>=0&&si>=0&&ti>=0)
     {
         int maxi=max(A[fi],max(B[si],C[ti]));
         int mini=min(A[fi],min(B[si],C[ti]));
